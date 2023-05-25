@@ -1,0 +1,82 @@
+// Jquery
+
+1) index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jjqquery</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1>Jquery responsive website</h1>
+        </div>
+
+        <div data-role="navbar" datta-grid="c">
+            <ul>
+                <li><a href="#" class="ui-btn-active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Login/Register</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </div>
+
+        <center><h3>Our Products</h3></center>
+        <div data-role="content">
+            <div data-role="rows">
+                <center>
+                <div>
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                </div>
+                <br><br>
+            
+                <div>
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                </div>
+                <br><br>
+                <div>
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                    <img src="product.jpg" alt="shoes" height="250" width="250" data-role="img">&nbsp;&nbsp;
+                </div>
+            </center>
+        </div>
+        </div>
+
+        <div data-role="footer" data-theme="b">
+            <center>
+            <div data-role="links">
+                <h3>Quick links</h3>
+                <a href="#">Home</a><br>
+                <a href="#">About us</a><br>
+                <a href="#">Products</a><br>
+                <a href="#">Register</a><br><br>
+                <h4>Copyright @sairaj shirole</h4>
+            </div>
+        </center>
+        </div>
+    </div>
+  </body>
+</html>

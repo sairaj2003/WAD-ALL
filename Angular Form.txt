@@ -1,0 +1,65 @@
+// Angular Form
+
+1) HTML File
+
+
+<h1>{{title}}</h1>
+
+Name:&nbsp;&nbsp;&nbsp;<input type="text" #name placeholder="Enter your name"><br><br>
+
+Address:<input type="text" #address placeholder="Enter your Address"><br><br>
+
+Contact:&nbsp;<input type="number" #number placeholder="Enter your contact number"><br><br>
+
+E-mail:&nbsp;&nbsp;&nbsp;<input type="email" #email placeholder="Enter your email"><br><br>
+
+Password:<input type="password" #password placeholder="Enter your password"><br><br>
+
+<button (click)="getValue(name.value,address.value,number.value,email.value)">Register</button>
+
+<h1>Your Registred Data</h1>
+
+<p>Name:{{displayname}}</p><br>
+<p>Address:{{displayaddress}}</p><br>
+<p>Number:{{displaynumber}}</p><br>
+<p>email:{{displayemail}}</p>
+
+
+
+
+2) ts file
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Registration Form';
+
+  displayname='';
+  displayaddress='';
+  displaynumber='';
+  displayemail='';
+
+  getValue(name:string,address:string,number:string,email:string){
+    this.displayname=name;
+    this.displayaddress=address;
+    this.displaynumber=number;
+    this.displayemail=email;
+    
+  }
+}
+
+
+
+------------------------------------------------------------------
+commands:
+
+npm init
+npm install -g @angular/cli@latest
+ng new part
+cd part
+ng serve

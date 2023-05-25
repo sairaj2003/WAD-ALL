@@ -1,0 +1,19 @@
+//Docker:
+
+1)Dockerfile
+
+FROM node:alpine
+COPY . /docker
+CMD . /docker/main.js
+
+2)main.js
+
+console.log("Hello");
+
+---------------------------------------------------------
+
+commands
+
+
+docker build -t main.js .
+docker images

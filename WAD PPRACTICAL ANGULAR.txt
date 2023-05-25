@@ -1,0 +1,70 @@
+WAD PPRACTICAL ANGULAR
+
+1.Check the version of npm   npm --version
+
+2. npm install -g @angular/cli@latest
+
+3.npm install tslib 
+
+4.ng serve     //to compile and run code
+
+
+
+//app.component.html
+
+
+	
+<h1>{{title}}</h1>
+
+Name:&nbsp;&nbsp;&nbsp;<input type="text" #name placeholder="Enter your name"><br><br>
+
+Address:<input type="text" #address placeholder="Enter your Address"><br><br>
+
+Contact:&nbsp;<input type="number" #number placeholder="Enter your contact number"><br><br>
+
+E-mail:&nbsp;&nbsp;&nbsp;<input type="email" #email placeholder="Enter your email"><br><br>
+
+Password:<input type="password" #password placeholder="Enter your password"><br><br>
+
+<button (click)="getValue(name.value,address.value,number.value,email.value)">Register</button>
+
+<h1>Your Registred Data</h1>
+
+<p>Name:{{displayname}}</p><br>
+<p>Address:{{displayaddress}}</p><br>
+<p>Number:{{displaynumber}}</p><br>
+<p>email:{{displayemail}}</p>
+
+
+
+
+
+//app.component.ts
+
+
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Registration Form';
+
+  displayname='';
+  displayaddress='';
+  displaynumber='';
+  displayemail='';
+
+  getValue(name:string,address:string,number:string,email:string){
+    this.displayname=name;
+    this.displayaddress=address;
+    this.displaynumber=number;
+    this.displayemail=email;
+    
+  }
+}
+
+	
